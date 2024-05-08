@@ -7,7 +7,7 @@ enum class Screen {
 }
 
 sealed class NavigationItem(val route: String) {
-    object Onboarding: NavigationItem(Screen.ONBOARDING.name)
-    object Home: NavigationItem(Screen.HOME.name)
-    object Profile: NavigationItem(Screen.PROFILE.name)
+    data object Onboarding: NavigationItem(Screen.ONBOARDING.name)
+    data object Home: NavigationItem(Screen.HOME.name)
+    data object Profile: NavigationItem(Screen.PROFILE.name)
 }
